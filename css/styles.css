@@ -71,6 +71,7 @@ button {
 /* ===header=== */
 .header {
     background-color: var(--white-color);
+    border-bottom: 1px solid #ECECEC;
 } 
   
 .container-header {
@@ -147,11 +148,13 @@ button {
     margin-left: auto;
     padding-left: 0;
     align-items: center;
-    
+    justify-content: center;
 }
 
 .contact-nav li {
-    margin-right: 50px;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-nav li:last-child {
@@ -165,9 +168,17 @@ button {
     font-size: 12px;
     line-height: 1.17;
     text-decoration: none;   
-    
-    
+    justify-content: center;
+    align-items: center
 }
+
+.contact-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-repeat: red;
+}
+
 .contact:hover ,
 .contact:focus {
   color:var(--link-hover-color)
@@ -182,7 +193,14 @@ button {
 
 .section-hero {
     display: flex;
-    background-color: black;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../images/1-hero/background.jpg);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
     min-height: 600px;
     padding: 50px 0;
 
@@ -248,6 +266,33 @@ button {
 .business-li-item:last-child {
     margin-right: 0;
 }
+
+.skills-container {
+    background:var(--backcolor-our-team);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.skills-item-1 {
+    background-image: url(../images/2-skills/antenna\ 1.png);
+   }
+
+.skills-item-2 {
+    background-image: url(../images/2-skills/clock\ 1.png);
+   }
+
+.skills-item-3 {
+    background-image: url(../images/2-skills/diagram\ 1.png);
+   }
+
+.skills-item-4 {
+    background-image: url(../images/2-skills/astronaut\ 1.png);
+   }
+
 .business-header {
     color: var(--text-color);
     margin-top: 0;
@@ -336,13 +381,24 @@ button {
     margin-left: 0;
     margin-right: 30px;
     list-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-photo-comment {
     width: 270px;
-    height: 108px;
-    background-color: #fff;
+    height: 168px;
+    background-color: var(--white-color);
     text-align: center;
+    border-radius: 0px 0px 4px 4px;  
+}
+
+.social-item {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: red;
 }
 
 .team-name {
@@ -368,7 +424,67 @@ button {
 
 /* --------------------------- section our team happy end------------------------------------- */
 
+/*---------------------------- our client section ---------------------------- */
 
+.our-client-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.client-ul {
+ display: flex;
+ flex-wrap: wrap;
+ width: calc(100%-150px/6);
+ padding-left: 0;
+}
+
+.client-ul li {
+    margin-right: 30px;
+}
+ .client-ul li:last-child {
+     margin-right: 0;
+ }
+
+.client-header {    
+    font-weight: 700px;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.client {
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+    /* box-sizing: border-box; */
+    border-radius: 4px;
+    background-color: #E5E5E5;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.client-item-1 {
+    background-image: url(../images/5-our-clients/logo-1.svg);
+}
+.client-item-2 {
+    background-image: url(../images/5-our-clients/logo-2.svg);
+}
+.client-item-3 {
+    background-image: url(../images/5-our-clients/logo-3.svg);
+}
+.client-item-4 {
+    background-image: url(../images/5-our-clients/logo-4.svg);
+}
+.client-item-5 {
+    background-image: url(../images/5-our-clients/logo-5.svg);
+}
+.client-item-6 {
+    background-image: url(../images/5-our-clients/logo-6.svg);
+}
+
+/* --------------------happy end our client---------------------- */
 
 /* ------------ footer ------------ */
 
