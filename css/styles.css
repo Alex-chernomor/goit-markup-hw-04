@@ -100,6 +100,9 @@ button {
 .link-nav li:last-child {
     margin-right:0;
 }
+
+
+
 .logoweb {
     padding-top: 24px;
     padding-bottom: 25px;
@@ -135,13 +138,15 @@ button {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+
 .link:hover ,
 .link:focus {
     color:var(--link-hover-color);
 }
 
-.link a:active {
-    color: red;
+.link-nav .link.current {
+    color: var(--link-hover-color);
 }
 .contact-nav {
     list-style: none;
@@ -240,6 +245,10 @@ button {
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.06em;
+  }
+
+  .studio-button:hover {
+      cursor: pointer;
   }
 /* ---------------------------hero happy end------------------------------------- */
 
@@ -407,18 +416,24 @@ button {
 }
 
 
-.social-item {
-    margin-right: 10px;
+.social-list-item-link:hover {
+    background-color: var(--link-hover-color);
+    --color1: #FFFFFF;
 }
 
 .social-svg {
-     /* color: red; */
+     width: 20px;
+     height: 20px;
+ }
+ 
+.social-svg-footer {
+   --color1: var(--white-color);
     width: 20px;
     height: 20px;
 }
 
-.social-list-item-link:hover .social-svg {
-  background-color: red;
+.social-item:not(:last-child) {
+    margin-right: 10px;
 }
 
 .team-name {
@@ -451,6 +466,7 @@ button {
     padding-bottom: 94px;
 }
 
+
 .client-ul {
  display: flex;
  flex-wrap: wrap;
@@ -474,42 +490,26 @@ button {
     margin-bottom: 50px;
 }
 
-.client {
+.client-item-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 90px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid #afb1b8;
     border-radius: 4px;
-    background-color: #E5E5E5;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
-.client-hover:hover ,
-.client-hover:focus {
-    border: 1px solid #2196F3;
-    box-sizing: border-box;
-    border-radius: 4px;
-    
+.client-item-a:hover,
+.client-item-a:focus {
+    border-color: var(--link-hover-color);
 }
 
-.client-item-1 {
-    background-image: url(../images/5-our-clients/logo-1.svg);
+.client-item-a:hover .client-svg,
+.client-item-a:focus .client-svg {
+  --color1: var(--link-hover-color);
 }
-.client-item-2 {
-    background-image: url(../images/5-our-clients/logo-2.svg);
-}
-.client-item-3 {
-    background-image: url(../images/5-our-clients/logo-3.svg);
-}
-.client-item-4 {
-    background-image: url(../images/5-our-clients/logo-4.svg);
-}
-.client-item-5 {
-    background-image: url(../images/5-our-clients/logo-5.svg);
-}
-.client-item-6 {
-    background-image: url(../images/5-our-clients/logo-6.svg);
-}
+
 
 /* --------------------happy end our client---------------------- */
 
@@ -587,13 +587,19 @@ button {
     margin-top: 72px;
 }
 
-/* .social-svg-conncet {
-    fill: white;
-} */
+.footer-item .social-item-svg {
+    fill: var(--primary-white-color);
+    width: 20px;
+    height: 20px;
+  }
+  .footer-item:hover,
+  .footer-item:focus {
+    background-color: var(--accent-color);
+  }
 
 .connect-item {
        background-color: rgba(255, 255, 255, 0.1);
-       /* margin: 0; */
+     
 }
 .connect-item:hover {
     background-color: #2196F3;
